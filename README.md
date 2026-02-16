@@ -1,3 +1,10 @@
+# Orchaid Backend
+
+Enterprise-style backend service built with Java + Spring Boot  
+for IoT, automation and data systems.
+
+🇪🇸 Leer en español: [README.es.md](README.es.md)
+
 # Orchaid Backend (MVP) — Java + Spring Boot
 
 Backend services for **Orchaid**, a long-term personal project focused on **IoT, data and automation systems**.
