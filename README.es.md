@@ -1,5 +1,10 @@
 # Orchaid Backend
 
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+![Estado](https://img.shields.io/badge/estado-MVP-orange)
+
+
 Servicio backend de estilo empresarial construido con Java + Spring Boot  
 para sistemas de IoT, automatización y datos.
 
