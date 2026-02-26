@@ -1,4 +1,4 @@
-package com.joan.orchaid_backend_java.controller;
+package com.joan.orchard_backend_java.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

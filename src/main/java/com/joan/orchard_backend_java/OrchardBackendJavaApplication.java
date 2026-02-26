@@ -1,13 +1,13 @@
-package com.joan.orchaid_backend_java;
+package com.joan.orchard_backend_java;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrchaidBackendJavaApplication {
+public class OrchardBackendJavaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrchaidBackendJavaApplication.class, args);
+		SpringApplication.run(OrchardBackendJavaApplication.class, args);
 	}
 
 }
