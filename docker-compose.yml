@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: orchard-postgres
+    environment:
+      POSTGRES_DB: orchard_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 54321
+    ports:
+      - "5400:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: orchard-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/orchard_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 54321
+      SPRING_FLYWAY_ENABLED: "true"
+    depends_on:
+      - postgres
+volumes:
+  postgres_data:
