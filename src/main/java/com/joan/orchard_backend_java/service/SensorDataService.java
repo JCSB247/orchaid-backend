@@ -41,14 +41,14 @@ public class SensorDataService {
      * Llama a repository.save() que ejecuta un INSERT en sensor_data.
      * Devuelve el objeto guardado con el id generado por PostgreSQL.
      */
-    public SensorData guardar(SensorData sensorData){
+    public SensorData save(SensorData sensorData){
         return repository.save(sensorData);
     }
     /**
      * Obtiene todas las lecturas de la base de datos.
      * Llama a repository.findAll() que ejecuta un SELECT * FROM sensor_data.
      */
-    public List<SensorData> obtenerTodas() {
+    public List<SensorData> getAll() {
         return repository.findAll();
     }
 

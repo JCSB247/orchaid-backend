@@ -45,7 +45,7 @@ public class SensorDataController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public SensorData crear(@RequestBody SensorData sensorData){
-        return service.guardar(sensorData);
+        return service.save(sensorData);
     }
     /**
      * GET /api/lecturas
@@ -57,6 +57,6 @@ public class SensorDataController {
      */
     @GetMapping
     public List<SensorData> obtenerTodas(){
-        return service.obtenerTodas();
+        return service.getAll();
     }
 }
